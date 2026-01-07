@@ -1,0 +1,315 @@
+/* --- Global Styles & Layout --- */
+body {
+    background-color: #fcfcfc;
+}
+/* The content-wrapper-single class in the HTML is using container-fluid, 
+   so we adjust the wrapper style slightly to keep padding consistency */
+.content-wrapper-single {
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+
+
+/* --- 1. HEADER (Hero Section) --- */
+.hero-section {
+    position: relative;
+    background: url("/assets/images/banner2.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(27, 7, 56, 0.7); /* Deep Purple Overlay */
+    background-blend-mode: overlay; 
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+}
+.hero-breadcrumbs { 
+    margin-top: 15px; 
+    font-size: 0.9rem; 
+    opacity: 0.8; 
+}
+.hero-breadcrumbs .divider { 
+    margin: 0 10px; 
+}
+
+/* --- Shared Heading & Accent --- */
+.section-heading {
+    font-weight: 800; 
+    color: #2b0c52;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-left: 0; 
+}
+.section-heading.text-center::after {
+    margin: 10px auto 0 auto;
+}
+
+
+/* --- 2. ABOUT PLACEMENT + IMAGE BLOCK (70/30 Split) --- */
+.about-placement-block {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08); 
+}
+
+/* Quote Box Styling */
+.quote-box-inline {
+    display: flex;
+    align-items: flex-start;
+    background: #fdf2f3;
+    border-left: 5px solid #ff5e62;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 0 10px 10px 0;
+}
+.quote-box-inline p {
+    margin: 0; 
+    font-style: italic; 
+    color: #444; 
+}
+.quote-icon { 
+    font-size: 2rem; 
+    color: #ff5e62; 
+    line-height: 1; 
+    margin-right: 15px; 
+    margin-top: -5px;
+    font-family: serif;
+    font-weight: 700;
+}
+
+/* Image Styling */
+.image-container-polished {
+    padding: 20px; 
+    background: #f8f9fc; 
+    border-radius: 15px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.image-container-polished img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+
+/* --- 3. PLACEMENT PROCESS + ENQUIRY FORM BLOCK (70/30 Split) --- */
+.process-form-block {
+    padding: 20px 0; 
+}
+.tile-heading {
+    font-weight: 700; 
+    color: #4a1c94;
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 15px; 
+    margin-bottom: 25px; 
+}
+
+/* Process List Styling */
+.process-list-item {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+.process-list-item h5 {
+    margin-top: 0;
+    color: #333;
+    font-weight: 700;
+}
+.process-list-item p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+}
+.process-list-icon {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.bg-gradient-1 { background: linear-gradient(45deg, #ff9966, #ff5e62); }
+.bg-gradient-2 { background: linear-gradient(45deg, #56ab2f, #a8e063); }
+.bg-gradient-3 { background: linear-gradient(45deg, #4568dc, #b06ab3); }
+
+/* Enquiry Card (Right Column) */
+.enquiry-card-process {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.enquiry-header-sidebar {
+    background: linear-gradient(to right, #4a1c94, #2b0c52);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.enquiry-body-sidebar {
+    padding: 20px;
+}
+
+
+/* --- 4. DATA SUMMARY SECTION --- */
+.data-summary-wrapper {
+    padding: 0 15px;
+}
+.data-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+}
+.data-card-heading {
+    font-weight: 700;
+    color: #4a1c94;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* Stats Table */
+.stats-table-clean {
+    font-size: 1rem;
+}
+.stats-table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed #e0e0e0;
+    align-items: center;
+}
+.stats-table-row.header {
+    font-weight: 700;
+    color: #2b0c52;
+    border-bottom: 2px solid #4a1c94;
+    padding-bottom: 15px;
+}
+.stat-name-col {
+    flex-basis: 70%; 
+    color: #333;
+}
+.stat-count-col {
+    flex-basis: 30%; 
+    font-weight: 700;
+    color: #ff5e62; 
+    text-align: right;
+}
+
+/* Tag Cloud */
+.tags-cloud-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px 0;
+}
+.tag-chip {
+    background: #eef2ff; 
+    color: #4a1c94;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    transition: background 0.2s;
+}
+.tag-chip:hover {
+    background: #4a1c94;
+    color: white;
+    cursor: pointer;
+}
+
+/* View More Button */
+.btn-view-more {
+    background: white;
+    color: #ff5e62;
+    border: 2px solid #ff9966;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.btn-view-more:hover {
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    color: white;
+}
+
+
+/* --- Form Inputs & Buttons --- */
+.form-group { 
+    margin-bottom: 15px; 
+}
+.modern-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.modern-input:focus {
+    border-color: #4a1c94;
+    box-shadow: 0 0 0 3px rgba(74, 28, 148, 0.1);
+}
+
+.btn-modern-submit-small {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+.btn-modern-submit-small:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 991px) {
+    .about-placement-block { 
+        padding: 30px 20px; 
+    }
+
+    /* Reverse order on mobile */
+    .about-placement-block .row { 
+        flex-direction: column-reverse; 
+    } 
+
+    .image-container-polished { 
+        margin-top: 20px; 
+    }
+
+    .data-summary-wrapper .row > div:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

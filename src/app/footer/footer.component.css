@@ -1,0 +1,101 @@
+.footer {
+  background: #042b4f;
+  padding: 70px 50px 20px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;  /* Equal spacing */
+  gap: 50px;
+}
+
+.footer-col .title {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-decoration: none !important;
+  font-weight: 600;
+  display: block;
+}
+.footer-col a{
+    text-decoration: none !important;
+    color:#fff;
+}
+
+.footer-about h2 {
+  font-size: 26px;
+}
+
+.footer-about .tagline {
+  font-style: italic;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.footer-about .description {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.social-icons i {
+  font-size: 22px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: #ffffff;
+}
+
+.footer-col a,
+.footer-col li,
+.footer-col p {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.footer-col li {
+  list-style: disc inside;
+}
+
+.footer-col p i {
+  margin-right: 10px;
+  color:white;
+}
+
+.contact-col p {
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0 0;
+  margin-top: 40px;
+  border-top: 1px solid #ffffff33;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.footer-icon {
+  width: 40px;   /* reduce width */
+  height: auto;  /* keeps logo proportion correct */
+}
+.footer-logo {
+  display: flex;           /* Align items in a row */
+  align-items: center;     /* Vertically center the logo and text */
+  gap: 10px;               /* Space between logo and text */
+}
+
+.footer-icon {
+  width: 50px;             /* Adjust logo size */
+  height: auto;
+}
+
+.footer-logo h2 {
+  margin: 0;               /* Remove default margin */
+  font-size: 24px;         /* Adjust text size if needed */
+}

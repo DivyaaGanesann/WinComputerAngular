@@ -1,0 +1,40 @@
+<main class="application-projects-page">
+  
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Application Projects</h1>
+      <p class="hero-subtitle">High-Quality Real-World Application Development Projects</p>
+    </div>
+  </header>
+  
+  <section class="projects-content-area">
+    <div class="container">
+      
+      <h2 class="section-heading">Project Categories</h2>
+      
+      <div class="cards-grid">
+        
+        <div class="project-card" *ngFor="let category of projectCategories">
+  <img 
+      class="project-image" 
+      [src]="category.iconUrl" 
+      [alt]="category.title + ' Icon'">
+  
+  <div class="card-text"> 
+    <h3 class="card-title">{{ category.title }}</h3>
+    <p class="card-description">{{ category.description }}</p>
+  </div>
+</div>
+
+
+      </div>
+      
+      <div class="contact-cta">
+        <h3>Ready to start your application project?</h3>
+        <p>Contact us now for expert guidance and real-time project support!</p>
+        <a href="tel:+919360977737" class="cta-button">Call Us: +91 9360977737</a>
+      </div>
+      
+    </div>
+  </section>
+</main>

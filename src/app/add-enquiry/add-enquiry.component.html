@@ -1,0 +1,32 @@
+<div class="table-container" *ngIf="enquiries.length > 0; else noEnquiries">
+  <table class="display table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Message</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let enquiry of enquiries; let i = index">
+        <td>{{ enquiry.id }}</td>
+        <td>{{ enquiry.name }}</td>
+        <td>{{ enquiry.email }}</td>
+        <td>{{ enquiry.mobile }}</td>
+        <td>{{ enquiry.message }}</td>
+        <td>
+          <button (click)="deleteEnquiry(i)" class="btn btn-danger btn-sm">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #noEnquiries>
+  <p class="text-center">No enquiries found.</p>
+</ng-template>

@@ -1,0 +1,40 @@
+<div class="admin-wrapper">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>Admin Panel</h2>
+    </div>
+<ul class="menu">
+  <li><a routerLink="/admin" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Dashboard</a></li>
+  <li><a routerLink="/admin/add-courses" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Add Courses</a></li>
+  <li><a routerLink="/admin/add-application" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Add Application</a></li>
+  <li><a routerLink="/admin/add-ieee" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Add IEEE Project</a></li>
+  <li><a routerLink="/admin/add-enquiry" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">View Enquiries</a></li>
+</ul>
+
+
+
+
+  </aside>
+
+  <!-- Main Section -->
+  <div class="main-area">
+
+    <!-- Top Navbar -->
+    <nav class="topnav">
+      <div class="left">
+        <span class="menu-icon" (click)="toggleSidebar()">&#9776;</span>
+      </div>
+      <div class="right">
+        <button class="logout">Logout</button>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</div>

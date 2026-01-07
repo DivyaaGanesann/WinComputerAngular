@@ -1,0 +1,212 @@
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url("/assets/images/banner.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ============================
+   GLOBAL
+=============================== */
+
+
+.section {
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+}
+
+/* ============================
+   ABOUT SECTION
+=============================== */
+.journey-left {
+  position: relative;
+  width: 450px;       /* Adjust width based on your layout */
+  height: 330px;      /* Height of the container */
+}
+
+/* First main tall image */
+.journey-left .img-left {
+  width: 260px;
+  height: 320px;
+  object-fit: cover;
+  
+  position: absolute;
+  left: 0;
+  top: -30px;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Second smaller overlapped image */
+.journey-left .img-right {
+  width: 250px;
+  height: 270px;
+  object-fit: cover;
+  
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.journey-right {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.journey-right h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.green-btn {
+  padding: 10px 25px;
+  background:  #003c8f;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* ============================
+   SERVICES (VISION / MISSION / WHY US)
+=============================== */
+.services {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 8%;
+  background: #f5faff;
+}
+
+.service-box {
+  width: 30%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.circle {
+  width: 63px;
+  height: 63px;
+  background: #005fcc;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* ============================
+   EXCELLENCE SECTION
+=============================== */
+.excellence-section {
+  display: flex;
+  padding: 60px 8%;
+}
+
+.excel-left {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.excel-left ul {
+  margin: 20px 0;
+  list-style-type: none;
+}
+
+.excel-left ul li {
+  padding: 8px 0;
+  font-size: 18px;
+  color: #003c8f;
+  font-weight: 600;
+}
+
+.excel-right {
+  flex: 1;
+  background: url('/assets/images/who2.jpg') center/cover no-repeat;
+  height: 350px;
+  border-radius: 12px;
+}
+
+/* ============================
+   CONTACT SECTION
+=============================== */
+.consultants {
+  text-align: center;
+  padding: 60px 8%;
+}
+
+.consult-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.consult-card {
+  width: 22%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.09);
+}
+
+.consult-card h3 {
+  color: #003c8f;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+

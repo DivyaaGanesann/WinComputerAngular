@@ -1,0 +1,46 @@
+<div class="container">
+
+  <h2 class="title">Add New Application Project</h2>
+
+  <form (ngSubmit)="submitForm()" #projectForm="ngForm" class="form-box">
+
+    <label>Title</label>
+    <input type="text" name="title" [(ngModel)]="title" placeholder="Enter Title" required>
+
+    <label>Description</label>
+    <textarea name="description" [(ngModel)]="description" placeholder="Enter Description" required></textarea>
+
+    <label>Upload Image</label>
+    <input type="file" (change)="onFileSelected($event)">
+
+    <button type="submit" class="btn-submit">Save Project</button>
+
+  </form>
+
+  <hr>
+
+  <table id="projectsTable" class="display">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Image Name</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projectCategories; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ project.icon_url }}</td>
+        <td>{{ project.title }}</td>
+        <td>{{ project.description }}</td>
+        <td>
+          <button (click)="editProject(i)">✏️</button>
+          <button (click)="deleteProject(i)">🗑️</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

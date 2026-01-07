@@ -1,0 +1,23 @@
+ <header class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Application Projects</h1>
+      <p class="hero-subtitle">High-Quality Real-World Application Development Projects</p>
+    </div>
+  </header>
+  <section class="courses-content-area">
+  <h2 class="section-heading">All Courses</h2>
+
+  <div class="cards-grid">
+    <div class="project-card" *ngFor="let course of courses">
+      <img 
+  [src]="course.img" 
+  class="project-image" 
+  alt="{{ course.title }}">
+
+      <div class="card-text">
+        <h3 class="card-title">{{ course.title }}</h3>
+        <p class="card-description">{{ course.text }}</p>
+      </div>
+    </div>
+  </div>
+</section>

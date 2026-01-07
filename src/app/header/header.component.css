@@ -1,0 +1,189 @@
+/* ===== Top Header Styles ===== */
+.top-header {
+  background-color:#7f67e8; /* light gray background */
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.5rem 0; /* top & bottom padding */
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+/* Left section: Email + Phone */
+.top-header .left {
+  display: flex;
+  gap: 1.5rem; /* space between email and phone */
+  align-items: center;
+}
+
+.top-header .left span {
+  color: floralwhite;
+}
+
+.top-header .left i {
+  margin-right: 0.3rem;
+  color: floralwhite; /* icon color */
+}
+
+/* Social Icons */
+.top-header .social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.top-header .social-icons a {
+  color: rgb(223, 222, 218);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.top-header .social-icons a:hover {
+  color: floralwhite; /* hover effect */
+}
+
+.top-header .social-icons i {
+  font-size: 1.2rem;
+}
+
+/* Responsive for small screens */
+@media (max-width: 576px) {
+  .top-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .top-header .social-icons {
+    justify-content: flex-start;
+  }
+}
+.top-header nav a:hover {
+  color: #007bff; /* blue on hover */
+}
+/* Navbar Container */
+.navbar-container {
+  background-color: #ffffff; /* White background */
+  border-bottom: 2px solid #ddd; /* Bottom border */
+  padding: 10px 0;
+}
+
+/* Logo + Text */
+.navbar-container .d-flex.align-items-center img {
+  display: block;
+}
+
+/* Text next to logo */
+.navbar-container .text-start h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color:#4a26f2;
+}
+
+.navbar-container .text-start h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+}
+
+/* Navbar Links */
+.navbar-container nav a {
+  font-size: 18px;
+  font-weight: 650;
+  color: #262d3d;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  
+  margin-left: 30px;
+  
+
+  
+}
+
+.navbar-container nav a:hover,
+.navbar-container nav a.active {
+  color: #007bff; /* Active link color */
+}
+
+/* Responsive: Stack logo and links on small screens */
+@media (max-width: 768px) {
+  .navbar-container .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .navbar-container nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}/* Main dropdown container */
+.dropdown-custom {
+  position: relative;
+}
+
+/* Inner dropdown menu */
+.dropdown-menu-custom {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 200px;
+  display: none;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+
+/* Show main dropdown */
+.dropdown-custom:hover .dropdown-menu-custom {
+  display: block;
+}
+
+/* Submenu container */
+.dropdown-submenu-custom {
+  position: relative;
+}
+
+/* Submenu toggle */
+.dropdown-toggle-sub-custom::after {
+  content: '▶';
+  float: right;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+/* Submenu menu */
+.dropdown-menu-sub-custom {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 180px;
+  display: none;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+
+/* Show submenu on hover */
+.dropdown-submenu-custom:hover .dropdown-menu-sub-custom {
+  display: block;
+}
+
+/* Item styling */
+.dropdown-item-custom {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-item-custom:hover {
+  background: #f2f2f2;
+  color: #4a1c94;
+}

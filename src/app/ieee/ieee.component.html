@@ -1,0 +1,24 @@
+<main class="ieee-page">
+  
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">IEEE Projects</h1>
+      <p class="hero-subtitle">Innovative Final Year Projects for Students</p>
+    </div>
+  </header>
+
+  <section class="projects-content-area">
+
+
+    <div class="cards-grid">
+      <div class="project-card" *ngFor="let project of ieeeList">
+      <img 
+        [src]="'http://localhost/backend/' + project.icon_url" 
+        class="project-image" 
+        alt="{{ project.title }}">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,71 @@
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-box input,
+.form-box textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn-submit {
+  background: #0066ff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #444;
+}/* Center the entire DataTable wrapper */
+#projectsTable_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers everything inside wrapper */
+  margin-top: 20px;
+}
+
+/* Table itself */
+#projectsTable {
+  width: 80%; /* adjust width as needed */
+  margin: 0 auto; /* ensures table itself is centered */
+  text-align: left; /* keeps text left-aligned inside cells */
+}
+
+/* Center pagination and search box */
+#projectsTable_wrapper .dataTables_length,
+#projectsTable_wrapper .dataTables_filter,
+#projectsTable_wrapper .dataTables_info,
+#projectsTable_wrapper .dataTables_paginate {
+  width: 80%; /* same width as table */
+  display: flex;
+  justify-content: space-between; /* search left, length right */
+  margin-bottom: 10px;
+}
+
+/* Optional: table styling */
+#projectsTable th, #projectsTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}

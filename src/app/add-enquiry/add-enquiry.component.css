@@ -1,0 +1,51 @@
+/* Center the table container */
+.table-container {
+  margin: 40px auto;        /* top-bottom: 40px, left-right: auto */
+  width: 90%;               /* table width */
+  max-width: 1200px;        /* optional, limits table width on large screens */
+  overflow-x: auto;         /* scroll if table is too wide */
+  text-align: center;       /* center text in table container */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;           /* center table */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Header styling */
+th {
+  background-color: #204ECF;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Table cells */
+td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Action button */
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* No enquiries message */
+.text-center {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+}

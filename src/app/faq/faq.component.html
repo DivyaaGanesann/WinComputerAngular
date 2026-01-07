@@ -1,0 +1,77 @@
+  <div class="faq-header">
+  <h1>FAQ</h1>
+  <p>Find answers to the most common questions.</p>
+</div>
+
+<div class="faq-container">
+
+  <p class="faq-subtitle">
+    These are the most frequently asked questions.<br />
+    If you have any questions, please contact us.
+  </p>
+
+
+  <!-- FAQ List -->
+  <div class="faq-list">
+
+    @for (item of faqList; track item.question; let i = $index) {
+      <div class="faq-item" (click)="toggle(i)">
+        <div class="faq-question">
+          Q: {{ item.question }}
+          <span class="arrow" [class.open]="item.open"><img src="assets/images/arrows.png" class="arrow-icon" /></span>
+        </div>
+
+        @if (item.open) {
+          <div class="faq-answer">
+            {{ item.answer }}
+          </div>
+        }
+      </div>
+    }
+
+  </div>
+</div>
+
+
+<div class="contact-section">
+
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <h1 class="title">You Have Questions,<br>We Have Answers</h1>
+
+    <p class="subtitle">
+      Get clarity about courses, fees, duration, placements, and all training-related 
+      queries. We are here to support your learning journey every step of the way.
+    </p>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right card">
+
+    <h2>Tell Us What You Need</h2>
+    <p class="form-subtitle">Our team is ready to assist you with every detail.</p>
+
+    <form>
+
+      <div class="row">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+      </div>
+
+      <div class="row">
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="Phone Number">
+      </div>
+
+      <input type="email" class="full" placeholder="Email Address">
+
+      <textarea placeholder="Message"></textarea>
+
+
+      <button class="submit-btn" type="submit">Submit</button>
+
+    </form>
+
+  </div>
+
+</div>

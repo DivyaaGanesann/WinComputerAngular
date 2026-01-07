@@ -1,0 +1,45 @@
+<div class="form-container">
+  <h2>Add Course</h2>
+
+  <form (ngSubmit)="submitCourse()">
+    <label>Course Title</label>
+    <input type="text" [(ngModel)]="title" name="title" required>
+
+    <label>Description</label>
+    <textarea [(ngModel)]="text" name="text" required></textarea>
+
+    <label>Course Image</label>
+    <input type="file" (change)="onFileSelected($event)" required>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+<div class="table-container" *ngIf="courses.length > 0">
+  <table id="coursesTable" class="display">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Image Name</th>
+        <th>Title</th>
+        <th>Text</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of courses; let i = index">
+        <td>{{ course.id }}</td>
+        <td>{{ course.img?.split('/').pop() }}</td>
+        <td>{{ course.title }}</td>
+        <td>{{ course.text }}</td>
+        <td>
+          <button (click)="editCourse(i)">
+            <img src="assets/images/edit.png" alt="Edit" class="action-icon">
+          </button>
+          <button (click)="deleteCourse(i)">
+            <img src="assets/images/delete.png" alt="Delete" class="action-icon">
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
